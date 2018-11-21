@@ -4,17 +4,17 @@ $param = $_GET['param'];
 echo $param;
 
 
-$socket_file = "/home/pool/xdag1/client/unix_sock.dat";
+$socket_file = '/home/pool/xdag1/client/unix_sock.dat';
 
-$version = "";
+$version = '';
 
-if ($param == "state"){
+if ($param == 'state'){
     statejson();
 }
-if ($param == "stats"){
+if ($param == 'stats'){
     statsjson();
 }
-if ($param == "netconn"){
+if ($param == 'netconn'){
     netjson();
 }
 
